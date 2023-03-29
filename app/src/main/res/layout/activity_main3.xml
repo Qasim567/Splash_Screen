@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:background="#269"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="10dp"
+        tools:ignore="MissingConstraints">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1mm"
+            android:hint="Enter Student Name"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            />
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1mm"
+            android:hint="Enter Student Age"
+            android:layout_below="@id/name"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:id="@+id/hob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1mm"
+            android:hint="Enter Hobbies"
+            android:layout_below="@id/age"
+            android:layout_marginTop="10dp"
+            android:inputType="textUri"/>
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1mm"
+            android:hint="Enter PTCL Number"
+            android:layout_below="@id/hob"
+            android:layout_marginTop="10dp"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1mm"
+            android:hint="Enter Cell Number"
+            android:layout_below="@id/phone"
+            android:layout_marginTop="10dp"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/caps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1mm"
+            android:hint="Enter Expereince"
+            android:layout_below="@id/number"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine|textCapSentences"/>
+        <AutoCompleteTextView
+            android:id="@+id/auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1mm"
+            android:hint="Enter your Education"
+            android:layout_below="@id/caps"/>
+        <Button
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/auto"
+            android:layout_marginTop="10dp"
+            android:padding="1mm"
+            android:text="Send"
+            android:scrollbarSize="5dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1mm"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <CheckBox android:id="@+id/checkbox_meat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:background="#C339C6"
+            android:text="Meat" />
+        <CheckBox android:id="@+id/checkbox_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:background="#C339C6"
+            android:text="Cheese" />
+        <CheckBox android:id="@+id/vegetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:background="#C339C6"
+            android:text="Vegetables" />
+        <CheckBox android:id="@+id/fruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="380dp"
+            android:background="#C339C6"
+            android:text="Fruit" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1mm"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="440dp"
+                android:background="#808080"
+                android:text="Male" />
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="440dp"
+                android:background="#808080"
+                android:text="Female" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1mm"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="490dp"
+            android:background="#3DDC84"
+            android:textOn="Turn On"
+            android:textOff="Turn off" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1mm"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="550dp"
+            android:background="#FFFF00"
+            android:progress="40"
+            android:max="100" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
